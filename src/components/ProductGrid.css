@@ -1,0 +1,46 @@
+/* 4 cards per row on desktop, stepping down for smaller screens. */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 999px) {
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 759px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 519px) {
+  .product-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.product-skeleton {
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.product-skeleton__media {
+  aspect-ratio: 4 / 3;
+  border-radius: 0;
+}
+
+.product-skeleton__body {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+}

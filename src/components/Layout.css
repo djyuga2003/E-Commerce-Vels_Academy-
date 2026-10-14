@@ -1,0 +1,47 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding-bottom: 72px;
+}
+
+.main:focus {
+  outline: none;
+}
+
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 16px;
+  z-index: 100;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--ink-900);
+  font-weight: 700;
+  box-shadow: var(--shadow-lg);
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: rgb(255 255 255 / 0.7);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-block: 22px;
+  color: var(--ink-500);
+  font-size: 14px;
+}

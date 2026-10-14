@@ -1,0 +1,88 @@
+// Mock catalogue used until the products API is ready.
+// Each product needs: { id, name, description, price, image }
+export const products = [
+  {
+    id: 1,
+    name: 'Spiral Notebook',
+    description: 'A4 ruled notebook with 200 pages of smooth, ink-friendly paper and a sturdy spiral binding.',
+    price: 120,
+    image: '/images/products/notebook.svg',
+  },
+  {
+    id: 2,
+    name: 'Gel Pen Set',
+    description: 'Pack of 10 smooth-writing gel pens in bright colours, with comfortable soft grips.',
+    price: 199,
+    image: '/images/products/gel-pens.svg',
+  },
+  {
+    id: 3,
+    name: 'Geometry Box',
+    description: 'Compass, divider, protractor, set squares, ruler, pencil and eraser in a durable metal case.',
+    price: 249,
+    image: '/images/products/geometry-box.svg',
+  },
+  {
+    id: 4,
+    name: 'Scientific Calculator',
+    description: '240-function calculator with a two-line display — ideal for maths and science classes.',
+    price: 1150,
+    image: '/images/products/calculator.svg',
+  },
+  {
+    id: 5,
+    name: 'School Backpack',
+    description: 'Water-resistant 30 L backpack with padded straps, a front pocket and two side pockets.',
+    price: 1499,
+    image: '/images/products/backpack.svg',
+  },
+  {
+    id: 6,
+    name: 'Steel Water Bottle',
+    description: 'Insulated 750 ml bottle that keeps water cold for 12 hours, with a leak-proof lid.',
+    price: 449,
+    image: '/images/products/water-bottle.svg',
+  },
+  {
+    id: 7,
+    name: 'Lunch Box',
+    description: 'BPA-free lunch box with three compartments and a leak-proof, clip-lock lid.',
+    price: 399,
+    image: '/images/products/lunch-box.svg',
+  },
+  {
+    id: 8,
+    name: 'Colour Pencils',
+    description: 'Set of 24 vibrant, pre-sharpened colour pencils with break-resistant leads.',
+    price: 220,
+    image: '/images/products/colour-pencils.svg',
+  },
+  {
+    id: 9,
+    name: 'Highlighter Set',
+    description: 'Four pastel highlighters with chisel tips for neat notes and quick revision.',
+    price: 150,
+    image: '/images/products/highlighters.svg',
+  },
+  {
+    id: 10,
+    name: 'LED Desk Lamp',
+    description: 'Adjustable study lamp with three brightness levels and soft, flicker-free light.',
+    price: 899,
+    image: '/images/products/desk-lamp.svg',
+  },
+  {
+    id: 11,
+    name: 'World Globe',
+    description: '8-inch globe on a sturdy stand — great for geography lessons and homework.',
+    price: 699,
+    image: '/images/products/globe.svg',
+  },
+  {
+    id: 12,
+    name: 'Watercolour Paint Set',
+    description: '12 rich watercolour cakes in a tin with a mixing lid and a fine-tip brush.',
+    price: 299,
+    image: '/images/products/watercolour-set.svg',
+  },
+];

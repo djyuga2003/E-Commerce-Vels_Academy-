@@ -1,0 +1,125 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  margin: 28px 0 40px;
+  padding: 48px;
+  border: 1px solid rgb(37 99 235 / 0.1);
+  border-radius: 28px;
+  background: var(--gradient-soft);
+}
+
+/* Soft blue and green glows behind the hero. */
+.hero::before,
+.hero::after {
+  position: absolute;
+  border-radius: 50%;
+  content: '';
+  pointer-events: none;
+}
+
+.hero::before {
+  top: -160px;
+  right: -60px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgb(37 99 235 / 0.16), transparent 68%);
+}
+
+.hero::after {
+  right: 220px;
+  bottom: -200px;
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgb(5 150 105 / 0.16), transparent 68%);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.hero__title {
+  color: var(--ink-900);
+  font-size: clamp(30px, 4.4vw, 46px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.hero__text {
+  max-width: 500px;
+  margin: 14px 0 28px;
+  color: var(--ink-700);
+  font-size: 17px;
+}
+
+.hero__art {
+  position: absolute;
+  top: 50%;
+  right: 56px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.7);
+  box-shadow: 0 30px 60px -30px rgb(37 99 235 / 0.35);
+  transform: translateY(-50%);
+}
+
+.hero__art img {
+  position: absolute;
+}
+
+.hero__art-main {
+  top: 34px;
+  left: 0;
+  width: 300px;
+}
+
+.hero__art-side {
+  right: -46px;
+  bottom: -6px;
+  width: 170px;
+  transform: rotate(8deg);
+}
+
+@media (max-width: 1079px) {
+  .hero__art {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    margin: 16px 0 28px;
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+  }
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.section-title {
+  min-width: 0;
+  color: var(--ink-900);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+}
+
+.section-meta {
+  flex-shrink: 0;
+  color: var(--ink-500);
+  font-size: 14px;
+}

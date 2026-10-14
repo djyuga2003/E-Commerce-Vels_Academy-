@@ -159,6 +159,7 @@ npm install
 npm run build
 ```
 
+
 This creates a `dist/` folder of plain HTML, CSS and JS files that any static host can serve, such as Netlify, Vercel, Cloudflare Pages or GitHub Pages.
 
 **2. Set the API address on the host**
